@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background-color: rgb(233, 231, 231);
+}
+
+header .menu {
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr 1fr 100px;
+    grid-template-rows: 50px 60px;
+    background: #004797;
+    border-bottom: 3px solid #ff4500;
+}
+
+.logo_container{
+    grid-area: 1/2/3/3;
+    display: flex;
+    justify-content:center;
+    margin: 20px
+}
+
+#search{
+    grid-area: 2/3/2/4;
+    height: 40px;
+}
+
+.sub_menu{
+    grid-area: 1/3/1/5;
+}
+.sub_menu li{
+    list-style: none;
+}
+
+.sub_menu li a {
+    text-decoration: none;
+    color: white;
+    padding-right: 20px;
+}
+
+.sub_menu ul{
+    display:flex ;
+}
+
+.menu_inf_nav ul{
+    display: flex;
+    justify-content:center;
+    gap: 10px;
+    list-style: none;
+    margin: 0 auto;
+    background: white;
+    padding: 10px 0;
+}
+
+.menu_inf_nav ul li a{
+    color: rgb(29, 29, 182);
+    text-decoration: none;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 150px auto 1fr;
+    width: 70vw;
+    margin: 30px auto;
+}
+
+.tv_principal{
+    grid-area: 1/1/2/3;
+    display: flex;
+    justify-content: center;
+}
+
+.tv_principal img{
+    border-radius: 10px;
+}
+
+.collage_image{
+    grid-area: 1/3/2/4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 7px;
+    width: 600px;
+    border-radius: 50px;
+    
+}
+
+.collage_image a {
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
+
+.collage_image a img:hover{
+    height: 65px;
+}
+.collage_image a img {
+    height: 60px;
+    margin: 5px;
+}
+
+.anuncio{
+    grid-area: 2/1/3/4;
+    width: 100%; 
+    margin-top: 30px;
+}
+
+.anuncio img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.container_linea{
+    grid-area: 3/1/4/4;
+}
+
+.linea {
+    background: white;
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.linea a{
+    text-decoration: none;
+    color: blue;
+}
+
+.linea a img{
+    width: 25px;
+}
+
+.regalo_1{
+    grid-area: 4/1/5/2;
+}
+
+.regalo_2{
+    grid-area: 4/2/5/3;
+}
